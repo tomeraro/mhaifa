@@ -1,0 +1,212 @@
+/*************************** FONTS ************************/
+/* Heebo regular */
+@font-face {
+  font-family: 'Heebo-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Heebo'), local('Heebo-Regular'),
+        url('./../assets/fonts/heebo-regular/Heebo-Regular.woff') format('woff'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-regular/Heebo-Regular.woff2') format('woff2'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-regular/Heebo-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/heebo-regular/Heebo-Regular.svg') format('svg'); /* Legacy iOS */
+}
+
+/* Heebo medium */
+@font-face {
+  font-family: 'Heebo-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Heebo'), local('Heebo-Medium'),
+        url('./../assets/fonts/heebo-medium/Heebo-Medium.woff') format('woff'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-medium/Heebo-Medium.woff2') format('woff2'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-medium/Heebo-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/heebo-medium/Heebo-Medium.svg') format('svg'); /* Legacy iOS */
+}
+    
+/* Heebo bold */
+@font-face {
+  font-family: 'Heebo-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Heebo'), local('Heebo-Bold'),
+        url('./../assets/fonts/heebo-bold/Heebo-Bold.woff') format('woff'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-bold/Heebo-Bold.woff2') format('woff2'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-bold/Heebo-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/heebo-bold/Heebo-Bold.svg') format('svg'); /* Legacy iOS */
+}
+
+/* Heebo extraBold */
+@font-face {
+  font-family: 'Heebo-extraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Heebo'), local('Heebo-extraBold'),
+        url('./../assets/fonts/heebo-extraBold/Heebo-ExtraBold.woff') format('woff'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-extraBold/Heebo-ExtraBold.woff2') format('woff2'), /* Modern Browsers */
+        url('./../assets/fonts/heebo-extraBold/Heebo-ExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/heebo-extraBold/Heebo-ExtraBold.svg') format('svg'); /* Legacy iOS */
+}
+
+/* Assistant light */
+@font-face {
+  font-family: 'Assistant-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Assistant'), local('Assistant-Light'),
+        url('./../assets/fonts/assistant-light/Assistant-Light.woff') format('woff'), /* Modern Browsers */
+        url('./../assets/fonts/assistant-light/Assistant-Light.woff2') format('woff2'), /* Modern Browsers */
+        url('./../assets/fonts/assistant-light/Assistant-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/assistant-light/Assistant-Light.svg') format('svg'); /* Legacy iOS */
+}
+/************************************************************/
+
+
+body {
+  direction: rtl;
+  font-family: 'Heebo-Regular';
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  font-family: 'Heebo-Regular';
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0 !important;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.common-container {
+  padding: 0 30px;
+}
+
+.full-width-90 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.full-width-85 {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.full-width-80 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .full-width-mobile-85 {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+
+/****** IMG BOX WITH INNER SHADOW ******/
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.img-box:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.img-box img.transform {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.img-box img.transform:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.img-box .content {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  padding: 15px;
+  pointer-events: none;
+}
+
+/****** COMMON BUTTON ******/
+.common-btn {
+  padding: 7px 26px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Heebo-Bold';
+  letter-spacing: 1px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.common-btn:hover {
+  background-color: #ffffff;
+  color: #0E723C;
+}
+
+
+/***** JW PLAYER *****/
+
+.jw-state-idle .jw-icon-display:before {
+  display: none;
+}
+
+#haifa-tv-player .jw-display-icon-container {
+  background-image: url('./../assets/images/icons/icon_play.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  opacity: unset;
+  width: 80px;
+  height: 80px;
+}
+
+#menu-player .jw-display-icon-container {
+  background-image: url('./../assets/images/icons/icon_play-small.svg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  opacity: unset;
+  width: 40px;
+  height: 40px;
+}
+

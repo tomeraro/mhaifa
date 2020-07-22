@@ -1,0 +1,809 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-boxes-mobile {
+  display: none;
+}
+
+/**** TOP BOXES ****/
+.top-boxes-wrapper h2 {
+  display: none;
+}
+
+.top-boxes-wrapper .top-boxes-container {
+  padding: 0;
+  margin: 0;
+  max-height: calc(100vw / 3);
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel {
+  background-image: url('./../assets/images/bg_nextGame.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.top-boxes-wrapper .top-boxes-container .item {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Heebo-Bold';
+}
+
+.top-boxes-wrapper .top-boxes-container .item .title {
+  font-size: 125%;
+  margin-bottom: 1%;
+}
+
+.top-boxes-wrapper .top-boxes-container .item .sub-title {
+  opacity: 0.8
+}
+
+.top-boxes-wrapper .top-boxes-container .item .teams {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 190%;
+  margin-bottom: 22px;
+  max-height: calc(((100vw / 3) / 2) * 0.35);
+}
+
+.top-boxes-wrapper .top-boxes-container .item .teams .vs {
+  margin: 0 40px;
+}
+
+
+.top-boxes-wrapper .top-boxes-container .item .teams .team-a .team-name,
+.top-boxes-wrapper .top-boxes-container .item .teams .team-b .team-name {
+  display: none;
+}
+
+.top-boxes-wrapper .top-boxes-container .item .teams .team-a,
+.top-boxes-wrapper .top-boxes-container .item .teams .team-b {
+  height: calc(((100vw / 3) / 2) * 0.35);
+  width: auto;
+}
+
+.top-boxes-wrapper .top-boxes-container .item .teams .team-a img {
+  float: left;
+  height: 100%;
+  width: auto;
+
+}
+
+.top-boxes-wrapper .top-boxes-container .item .teams .team-b img {
+  float: right;
+  height: 100%;
+  width: auto;
+}
+
+.top-boxes-wrapper .top-boxes-container .item .links a {
+  margin: 0 5px;
+  min-width: 160px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15px;
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .img-box {
+  height: calc(100vw / 3);
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .img-box:after {
+  height: 31.25%;
+}
+
+.top-boxes-wrapper .top-boxes-container .news-carousel .img-box .content {
+  width: 100%;
+  text-align: center;
+  bottom: 30px;
+  font-family: 'Heebo-Bold';
+  font-size: 285%;
+  color: #ffffff;
+}
+
+.top-boxes-wrapper .top-boxes-container .news .img-box .content img,
+.top-boxes-wrapper .top-boxes-container .news-carousel .img-box .content img {
+  height: auto;
+}
+
+.top-boxes-wrapper .top-boxes-container .news {
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+.top-boxes-wrapper .top-boxes-container .news .img-box {
+  height: 100%;
+}
+
+.top-boxes-wrapper .top-boxes-container .news .img-box:after {
+  height: 62.5%;
+}
+
+.top-boxes-wrapper .top-boxes-container .news .img-box .content span.news-title {
+  color: #ffffff;
+  font-size: 190%;
+  font-family: 'Heebo-Bold';
+}
+
+.top-boxes-wrapper .top-boxes-container .news .img-box .content {
+  display: flex;
+  align-items: center;
+}
+
+.max-box-height {
+  max-height: calc(100vw / 3);
+}
+
+.max-half-box-height {
+  min-height: calc((100vw / 3) / 2);
+  max-height: calc((100vw / 3) / 2);
+  height: calc((100vw / 3) / 2);
+}
+
+.news-wrapper {
+  padding: 2%;
+}
+
+.news-wrapper h2 {
+  font-family: 'Heebo-Medium';
+  font-size: 250%;
+  margin-bottom: 2%;
+}
+
+.news-wrapper .container {
+  max-width: 85%;
+}
+
+.news-wrapper .item { 
+  margin-bottom: 30px;
+}
+
+.news-wrapper .img-box {
+  padding-bottom: 47vh;
+}
+
+.news-wrapper .img-box .img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.news-wrapper .img-box .main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-wrapper .img-box .content .date {
+  color: #13954F;
+  font-size: 90%;
+}
+
+.news-wrapper .img-box .content .title a {
+  color: #ffffff;
+  font-family: 'Heebo-Bold';
+  font-size: 140%;
+}
+
+.promotion-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 70px 9%;
+  height: 100%;
+}
+
+.promotion-wrapper .promotion-box .img-box:after {
+  display: none;
+}
+
+.promotion-wrapper .promotion-box .img-box img.main-img {
+  width: 100%;
+}
+
+.promotion-wrapper .promotion-box .img-box .content {
+  width: 100%;
+  text-align: center;
+  font-family: 'Heebo-Bold';
+  font-size: 180%;
+  color: #ffffff;
+  padding: 5%;
+}
+
+.haifa-tv-wrapper {
+  background-image: url('./../assets/images/bg_video.jpg');
+  padding: 40px 0 150px 0;
+  background-size: cover;
+}
+
+.haifa-tv-wrapper h2 {
+  font-family: 'Heebo-Medium';
+  font-size: 250%;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.haifa-tv-wrapper .video {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.haifa-tv-wrapper .video img {
+  width: 100%;
+}
+
+.haifa-tv-wrapper .more-videos {
+  text-align: center;
+}
+
+.winnings-wrapper {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.winnings-wrapper h2 {
+  font-family: 'Heebo-Medium';
+  font-size: 250%;
+  margin-bottom: 40px;
+}
+
+.winnings-wrapper .winnings-carousel .item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.winnings-wrapper .winnings-carousel .item .counter {
+  color: #13954F;
+  font-family: 'Heebo-Bold';
+  font-size: 280%;
+}
+
+.winnings-wrapper .winnings-carousel .item .logo {
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winnings-wrapper .winnings-carousel .item .logo img {
+  width: auto;
+}
+
+.winnings-wrapper .winnings-carousel .item .text {
+  margin-top: 20px;
+  font-size: 150%;
+}
+
+.store-wrapper h2 {
+  padding: 2%;
+  font-family: 'Heebo-Medium';
+  font-size: 250%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.store-wrapper .store-container {
+  background-color: #000;
+  padding: 75px 0 35px 0;
+}
+
+.store-wrapper .store-container .store-carousel {
+  margin-bottom: 20px;
+}
+
+.store-wrapper .store-container .store-carousel .item {
+  font-size: 150%;
+  font-family: 'Heebo-Bold';
+  text-align: center;
+  color: #fff;
+}
+.store-wrapper .store-container .store-carousel .item .item-container {
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.store-wrapper .store-container .store-carousel .item .item-img {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.store-wrapper .store-container .store-carousel .item .item-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-wrapper .store-container .store-carousel .item .item-text {
+  margin-bottom: 5px;
+}
+
+.store-wrapper .store-container .store-carousel .item .item-prices .origin {
+  text-decoration-line: line-through;
+  font-family: 'Heebo-Regular';
+}
+
+.store-wrapper .store-container .store-carousel .item .item-prices .current {
+  color: #13954F;
+}
+
+.store-wrapper .store-container .store-link {
+  text-align: center;
+}
+
+
+/***** Mobile + tablet ******/
+@media screen and (max-width: 991px) {
+  .news-boxes-mobile {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .news-boxes-mobile .full-width-two-articles,
+  .news-boxes-mobile .full-width-article {
+    margin-bottom: 1px;
+  }
+
+  .news-boxes-mobile .full-width-two-articles {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .news-boxes-mobile .full-width-two-articles .item:first-child {
+    margin-left: 1px;
+  }
+
+  .news-boxes-mobile .full-width-two-articles .item {
+    width: 50%;
+  }
+
+  .news-boxes-mobile .full-width-article .content,
+  .news-boxes-mobile .full-width-two-articles .item .content {
+    font-family: 'Heebo-Bold';
+  }
+
+  .news-boxes-mobile .full-width-two-articles .item .content .date,
+  .news-boxes-mobile .full-width-article .content .date {
+    font-size: 90%;
+    color: #D3CFCF;
+  }
+
+  .news-boxes-mobile .full-width-article .content .title a,
+  .news-boxes-mobile .full-width-two-articles .item .content .title a {
+    font-size: 120%;
+    color: #ffffff;
+    font-family: 'Heebo-Bold';
+  }
+
+  .news-boxes-mobile .full-width-two-articles .img-box img.main-img,
+  .news-boxes-mobile .full-width-article .img-box img.main-img {
+    width: 100%;
+  }
+  .news-wrapper {
+    display: none;
+  }
+
+  .top-boxes-wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px 15px 30px 15px;
+    order: 2;
+  }
+
+  .top-boxes-wrapper h2 {
+    font-family: 'Heebo-Bold';
+    font-size: 140%;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .top-boxes-wrapper .top-boxes-container {
+    max-height: none;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel {
+    background-image: none;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .item-content {
+    display: flex;
+    background-color: #0E723C;
+    order: 2;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .teams .team-a .team-name,
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .teams .team-b .team-name {
+    display: block;
+    font-size: 50%;
+    color: #000000;
+  }
+
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .teams .team-a,
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .teams .team-b {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .teams .team-a img,
+  .top-boxes-wrapper .top-boxes-container .item .teams .team-b img {
+    width: auto;
+    max-width: initial;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .teams .team-a {
+    margin-left: 1px;
+  }
+  
+  .top-boxes-wrapper .top-boxes-container .item .teams .team-a,
+  .top-boxes-wrapper .top-boxes-container .item .teams .team-b {
+    height: auto;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .teams {
+    margin: 0;
+    position: relative;
+    max-height: none;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .teams .vs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 34px;
+    width: 34px;
+    background-color: #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: auto 0;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .title,
+  .top-boxes-wrapper .top-boxes-container .item .links,
+  .top-boxes-wrapper .top-boxes-container .articles,
+  .top-boxes-wrapper .top-boxes-container .main-slider {
+    display: none;
+  }
+
+  .max-half-box-height {
+    height: auto;
+    max-height: fit-content;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .sub-title {
+    opacity: unset;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .sub-title br {
+    display: none; 
+  }
+
+  .promotion-wrapper {
+    padding: 5%;
+    order: 4;
+  }
+
+  .promotion-wrapper .promotion-box {
+    margin-bottom: 5%;
+  }
+
+  .promotion-wrapper .promotion-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .haifa-tv-wrapper {
+    display: none;
+  }
+
+  .store-wrapper {
+    order: 3;
+  }
+
+  .store-wrapper h2 {
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Heebo-Bold';
+    font-size: 140%;
+  }
+
+  .store-wrapper .store-container {
+    padding: 15px;
+  }
+
+  .store-wrapper .store-container .store-carousel {
+    margin-bottom: 0;
+  }
+
+  .store-wrapper .store-container .store-link {
+    display: none;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev {
+    background-image: url('./../assets/images/icons/icon_arrow_right.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next {
+    background-image: url('./../assets/images/icons/icon_arrow_left.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next span {
+    display: none;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 72px);
+  }
+
+  .store-wrapper .store-container .store-carousel.full-width-90 {
+    max-width: 100%;
+  }
+
+  .store-wrapper .store-container .store-carousel .item .item-img {
+    padding: 0 70px;
+  }
+
+  .winnings-wrapper {
+    order: 5;
+    padding: 5% 2%;
+  }
+
+  .winnings-wrapper h2 {
+    font-family: 'Heebo-Bold';
+    font-size: 140%;
+    margin-bottom: 20px;
+  }
+
+  .winnings-wrapper .winnings-carousel {
+    margin-bottom: 0;
+  }
+
+  .winnings-wrapper .winnings-carousel.full-width-80 {
+    max-width: 100%;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev {
+    background-image: url('./../assets/images/icons/icon_arrow_black_right.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next {
+    background-image: url('./../assets/images/icons/icon_arrow_black_left.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next span {
+    display: none;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 30px);
+  }
+}
+
+/**** small desktop ****/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .top-boxes-wrapper .top-boxes-container {
+    max-height: unset;
+  }
+  
+  .max-box-height {
+    max-height: unset;
+  }
+  
+  .max-half-box-height {
+    min-height: unset;
+    max-height: unset;
+    height: auto;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel {
+    padding: 20px 0;
+  }
+
+  .top-boxes-wrapper .top-boxes-container .news-carousel .img-box {
+    height: auto;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev {
+    background-image: url('./../assets/images/icons/icon_arrow_right.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next {
+    background-image: url('./../assets/images/icons/icon_arrow_left.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav button.owl-next span {
+    display: none;
+  }
+
+  .store-wrapper .store-container .owl-carousel .owl-nav {
+    width: calc(110%);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 72px);
+    right: -5%;
+  }
+
+  .winnings-wrapper .winnings-carousel.full-width-80 {
+    max-width: 100%;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev {
+    background-image: url('./../assets/images/icons/icon_arrow_black_right.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-prev span {
+    display: none;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next {
+    background-image: url('./../assets/images/icons/icon_arrow_black_left.png') !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: unset;
+    opacity: 0.8;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav button.owl-next span {
+    display: none;
+  }
+
+  .winnings-wrapper .owl-carousel .owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 30px);
+  }
+
+  .promotion-wrapper {
+    padding: 30px;
+  }
+}
+
+/**** mid desktop ****/
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .top-boxes-wrapper .top-boxes-container .item .sub-title br {
+    display: none; 
+  }
+
+  .top-boxes-wrapper .top-boxes-container .item .teams {
+    margin-bottom: 12px;
+    font-size: 170%;
+  }
+  
+  .news-wrapper .img-box .content,
+  .top-boxes-wrapper .top-boxes-container .news,
+  .top-boxes-wrapper .top-boxes-container .news-carousel {
+    font-size: 14px;
+  }
+}
