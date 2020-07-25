@@ -1,3 +1,7 @@
+.common-container {
+  padding: 0 30px;
+}
+
 /*********** TOP MENU ***********/
 header .top-menu {
   background-color: #1F1E1E;
@@ -286,6 +290,13 @@ nav.navbar .navbar-collapse ul li {
 }
 
 @media screen and (max-width: 991px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: #fff;
+  }
+
   header .site-header .top-header:after ,
   header .site-header .top-header .main .title-container,
   header .site-header .top-header .sponser-img,

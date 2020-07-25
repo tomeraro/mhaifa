@@ -1,0 +1,87 @@
+.vod-page {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.vod-page .page-main-header {
+  background-image: url('./../assets/images/article-main-pic.jpg');
+}
+
+.vod-page .vod-row h2 {
+  text-align: center;
+  font-family: 'Heebo-Medium';
+  font-size: 250%;
+  margin: 50px 0 30px 0;
+}
+
+.vod-page .vod-row.main .img-box {
+  padding-bottom: 47vh;
+}
+
+.vod-page .vod-row.secondary .vod-item .img-box:after {
+  display: none;
+}
+
+.vod-page .vod-row.secondary .img-box {
+  padding-bottom: 150px;
+}
+
+.vod-page .vod-row.secondary .img-box.big {
+  padding-bottom: 330px;
+}
+
+.vod-page .vod-row.main .img-box .img-container a .main-img,
+.vod-page .vod-row.secondary .img-box .img-container img,
+.vod-page .vod-row.secondary .img-box.big .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vod-page .vod-row.secondary .content .date,
+.vod-page .vod-row.main .img-box .content .date {
+  color: #13954F;
+  font-size: 90%;
+}
+
+.vod-page .vod-row.secondary .content .title a {
+  font-family: 'Heebo-Bold';
+  font-size: 125%;
+}
+
+.vod-page .vod-row.secondary .content {
+  margin-top: 15px;
+}
+
+.vod-page .vod-row.main .video:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url('./../assets/images/icons/icon_play.svg');
+  background-size: 100%;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+}
+
+.vod-page .vod-row.vod-row.secondary .img-box .img-container.video:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url('./../assets/images/icons/icon_play-small.svg');
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.vod-page .vod-row.secondary:last-of-type {
+  padding-bottom: 100px;
+}

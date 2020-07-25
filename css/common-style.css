@@ -76,6 +76,7 @@ body {
 a {
   font-family: 'Heebo-Regular';
   text-decoration: none;
+  color: #000;
 }
 
 a:hover {
@@ -89,10 +90,6 @@ ul {
 
 h1, h2, h3 {
   margin: 0;
-}
-
-.common-container {
-  padding: 0 30px;
 }
 
 .full-width-90 {
@@ -134,7 +131,7 @@ h1, h2, h3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 50%;
+  height: 200px;
   width: 100%;
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
   z-index: 1;
@@ -164,6 +161,26 @@ h1, h2, h3 {
   pointer-events: none;
 }
 
+.img-box .img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img-box .content .date {
+  color: #13954F;
+  font-size: 90%;
+}
+
+.img-box .content .title {
+  color: #ffffff;
+  font-family: 'Heebo-Bold';
+  font-size: 140%;
+}
+
+
 /****** COMMON BUTTON ******/
 .common-btn {
   padding: 7px 26px;
@@ -184,8 +201,31 @@ h1, h2, h3 {
 }
 
 
-/***** JW PLAYER *****/
+/***** GRID BOXES *****/
+/*
+  desktop proportions: 
+  height of all box = calc(100vw / 3);
+  height of half box = calc(100vw / 3) / 2;
+*/
 
+.max-half-box-height {
+  height: calc((100vw / 3) / 2);
+}
+.max-box-height {
+  height: calc(100vw / 3);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .max-half-box-height {
+    height: calc(30vw);
+  }
+  .max-box-height {
+    height: calc(60vw);
+  }  
+}
+
+
+/***** JW PLAYER *****/
 .jw-state-idle .jw-icon-display:before {
   display: none;
 }
@@ -210,3 +250,26 @@ h1, h2, h3 {
   height: 40px;
 }
 
+
+
+/**** MAIN TITLE ****/
+.page-main-header {
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-main-header h1 {
+  color: #ffffff;
+  font-family: 'Heebo-Bold';
+  font-size: 500%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .archive-page .page-main-header h1 {
+    font-size: 180%;
+  }
+}

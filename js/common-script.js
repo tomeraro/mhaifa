@@ -18,18 +18,8 @@ $(document).ready(function(){
     rtl: true,
     loop: true,
     dots: false,
-    responsive: {
-            0:{
-              items: 1,
-            },
-            768:{
-              items: 2,
-              margin: 20,
-            },
-            992: {
-              items: 1
-            },
-        }
+    nav: true,
+    items: 1,
   });
 
   $('.owl-carousel.winnings-carousel').owlCarousel({

@@ -15,7 +15,6 @@
 .top-boxes-wrapper .top-boxes-container {
   padding: 0;
   margin: 0;
-  max-height: calc(100vw / 3);
 }
 
 .top-boxes-wrapper .top-boxes-container .next-games-carousel {
@@ -23,6 +22,53 @@
   background-size: cover;
   display: flex;
   align-items: center;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-prev {
+  background-image: url('./../assets/images/icons/icon_arrow_right.png') !important;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  outline: 0;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-prev:hover {
+  background-color: unset;
+  opacity: 0.8;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-prev span {
+  display: none;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-next {
+  background-image: url('./../assets/images/icons/icon_arrow_left.png') !important;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  outline: 0;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+  position: absolute;
+  position: absolute;
+  left: 10px;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-next:hover {
+  background-color: unset;
+  opacity: 0.8;
+}
+
+.top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-next span {
+  display: none;
 }
 
 .top-boxes-wrapper .top-boxes-container .item {
@@ -53,7 +99,6 @@
 .top-boxes-wrapper .top-boxes-container .item .teams .vs {
   margin: 0 40px;
 }
-
 
 .top-boxes-wrapper .top-boxes-container .item .teams .team-a .team-name,
 .top-boxes-wrapper .top-boxes-container .item .teams .team-b .team-name {
@@ -106,14 +151,6 @@
   opacity: 0.3;
 }
 
-.top-boxes-wrapper .top-boxes-container .news-carousel .img-box {
-  height: calc(100vw / 3);
-}
-
-.top-boxes-wrapper .top-boxes-container .news-carousel .img-box:after {
-  height: 31.25%;
-}
-
 .top-boxes-wrapper .top-boxes-container .news-carousel .img-box .content {
   width: 100%;
   text-align: center;
@@ -134,12 +171,11 @@
   height: 100%;
 }
 
-.top-boxes-wrapper .top-boxes-container .news .img-box {
+.top-boxes-wrapper .top-boxes-container .news-carousel .half-box-height a img,
+.top-boxes-wrapper .top-boxes-container .news .max-half-box-height a img {
   height: 100%;
-}
-
-.top-boxes-wrapper .top-boxes-container .news .img-box:after {
-  height: 62.5%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .top-boxes-wrapper .top-boxes-container .news .img-box .content span.news-title {
@@ -151,16 +187,6 @@
 .top-boxes-wrapper .top-boxes-container .news .img-box .content {
   display: flex;
   align-items: center;
-}
-
-.max-box-height {
-  max-height: calc(100vw / 3);
-}
-
-.max-half-box-height {
-  min-height: calc((100vw / 3) / 2);
-  max-height: calc((100vw / 3) / 2);
-  height: calc((100vw / 3) / 2);
 }
 
 .news-wrapper {
@@ -183,14 +209,6 @@
 
 .news-wrapper .img-box {
   padding-bottom: 47vh;
-}
-
-.news-wrapper .img-box .img-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .news-wrapper .img-box .main-img {
@@ -432,9 +450,24 @@
     background-image: none;
   }
 
+
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-prev {
+    background-image: url('./../assets/images/icons/icon_arrow_black_right.png') !important;
+    right: -15px;
+  }
+  
+  .top-boxes-wrapper .top-boxes-container .next-games-carousel .owl-nav button.owl-next {
+    background-image: url('./../assets/images/icons/icon_arrow_black_left.png') !important;
+    left: -15px;
+  }
+
+
+
   .top-boxes-wrapper .top-boxes-container .next-games-carousel .item {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .top-boxes-wrapper .top-boxes-container .next-games-carousel .item .item-content {
@@ -674,26 +707,8 @@
 
 /**** small desktop ****/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .top-boxes-wrapper .top-boxes-container {
-    max-height: unset;
-  }
-  
-  .max-box-height {
-    max-height: unset;
-  }
-  
-  .max-half-box-height {
-    min-height: unset;
-    max-height: unset;
-    height: auto;
-  }
-
   .top-boxes-wrapper .top-boxes-container .next-games-carousel {
     padding: 20px 0;
-  }
-
-  .top-boxes-wrapper .top-boxes-container .news-carousel .img-box {
-    height: auto;
   }
 
   .store-wrapper .store-container .owl-carousel .owl-nav button.owl-prev {

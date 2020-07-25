@@ -37,29 +37,10 @@
   padding-bottom: 47vh;
 }
 
-.article-wrapper .more-articles .article .img-box .img-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .article-wrapper .more-articles .article .img-box .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.article-wrapper .more-articles .article .img-box .content .date {
-  color: #13954F;
-  font-size: 90%;
-}
-
-.article-wrapper .more-articles .article .img-box .content .title {
-  color: #ffffff;
-  font-family: 'Heebo-Bold';
-  font-size: 140%;
 }
 
 
