@@ -385,6 +385,22 @@
     order: 1;
   }
 
+  .news-boxes-mobile .full-width-article .img-box {
+    padding-bottom: 73vw;
+  }
+
+  .news-boxes-mobile .full-width-two-articles .img-box:after {
+    height: 31.25%;
+  }
+
+  .news-boxes-mobile .full-width-two-articles .img-box {
+    padding-bottom: 34vw;
+  }
+
+  .news-boxes-mobile .full-width-two-articles .img-box:after {
+    height: 62.5%;
+  }
+
   .news-boxes-mobile .full-width-two-articles,
   .news-boxes-mobile .full-width-article {
     margin-bottom: 1px;

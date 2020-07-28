@@ -5,6 +5,31 @@ $(document).ready(function(){
     'file': 'http://www.youtube.com/v/nLky7bv3cQs',
   });
 
+  $(document).on('click touch', function(e) {
+    if (window.innerWidth <= 991) {
+      if ($('.navbar-collapse').css('display') === 'block') {
+        const isMenuClick = $(e.target).parents(".navbar-collapse").length == 1 
+        if (!isMenuClick) {
+          var menu = $("#navigationMenu");
+          menu.collapse('hide');    
+        }
+      }
+    }
+  });
+
+  $('#close-search-mobile').click(function() {
+    $('#input-mobile-seach').val('');
+  });
+
+  $('#search-icon, #close-search').on('click', function() {
+    if($('#search-box').css('visibility') == 'hidden') {
+      $('#search-box').removeClass('not-active');
+      $('#search-box').addClass('active');
+    } else {
+      $('#search-box').removeClass('active');
+      $('#search-box').addClass('not-active');
+    }
+  });
 
   // ***** HOME PAGE ****//
   $('.owl-carousel.news-carousel').owlCarousel({

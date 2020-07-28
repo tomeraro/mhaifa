@@ -1,0 +1,207 @@
+.team-page {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.team-page .page-main-header {
+  background-image: url('./../assets/images/team.jpg');
+  height: calc(100vw / 3);
+  flex-direction: column;
+  padding: 50px 0;
+  justify-content: flex-start;
+}
+
+.team-page .page-main-header .year {
+  font-size: 150%;
+  color: #fff;
+  font-family: 'Heebo-Bold';
+}
+
+.team-page .tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.team-page .tabs {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.team-page .tabs .players,
+.team-page .tabs .management {
+  height: 50px;
+  background: #fff;
+  border: 1px solid rgba(91,84,106,0.2);
+  color: #5B546A;
+  width: 140px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.team-page .tabs .players.selected,
+.team-page .tabs .management.selected {
+  color: #0E723C;
+  border: 1px solid #0E723C;
+  font-family: 'Heebo-Bold';
+}
+
+.team-page .all-team-wrapper .role-wrapper {
+  margin-bottom: 30px;
+}
+
+.team-page .all-team-wrapper h2 {
+  font-size: 250%;
+  font-family: 'Heebo-Medium';
+  margin-bottom: 20px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .img-box {
+  background-color: #002310;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 47vh;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .img-box .img-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .img-box .img-container img.mobile {
+  display: none;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .number {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  opacity: 0.2;
+  color: #FFFFFF;
+  font-size: 250%;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .content {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  right: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .content .role {
+  color: #13954F;
+  font-family: 'Heebo-Bold';
+  font-size: 110%;
+  padding: 0 15px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .content .name {
+  color: #fff;
+  font-family: 'Heebo-Bold';
+  font-size: 185%;
+  padding: 0 15px 15px 0;
+  border-bottom: 1px solid rgb(151, 151, 151, 0.5);
+}
+
+.team-page .all-team-wrapper #players,
+.team-page .all-team-wrapper #management {
+  padding-bottom: 140px;
+}
+
+.team-page .all-team-wrapper #management .role-wrapper .item .content {
+  bottom: 49px;
+}
+
+.team-page .all-team-wrapper .role-wrapper .item .content .profile {
+  color: #fff;
+  font-size: 90%;
+  padding: 13px 15px;
+}
+
+.team-page .all-team-wrapper #players.hide,
+.team-page .all-team-wrapper #management.hide {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+  .team-page .page-main-header {
+    display: none;
+  }
+
+  .team-page .all-team-wrapper.all-team-wrapper {
+    max-width: 100%;
+  }
+
+  .team-page .all-team-wrapper h2 {
+    font-size: 140%;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .img-box {
+    padding-bottom: 39vw;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .img-box:after {
+    display: none;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .img-box .img-container {
+    justify-content: flex-end;
+    padding-left: 10px;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .content .profile {
+    display: none;
+  }
+
+  
+  .team-page .all-team-wrapper .role-wrapper .item .img-box .img-container img.desktop {
+    display: none;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .img-box .img-container img.mobile {
+    display: block;
+  }
+
+  .team-page .all-team-wrapper #management .role-wrapper .item .content {
+    bottom: 0;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .content .name {
+    border: none;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item {
+    font-size: 14px;
+  }
+
+  .team-page .all-team-wrapper .role-wrapper .item .number {
+    top: 15%;
+  }
+}
+
+/***** Tablet spesifications ******/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .team-page .all-team-wrapper .role-wrapper .item {
+    font-size: 18px;
+  }
+
+  .team-page .all-team-wrapper.full-width-80 {
+    padding: 0 30px;
+  }
+
+  .team-page .all-team-wrapper h2 {
+    font-size: 250%;
+  }
+}

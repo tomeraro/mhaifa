@@ -139,6 +139,83 @@ nav.navbar ul li .dropdown-menu {
 }
 
 
+header .site-header .search-box {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  padding: 39px 0;
+}
+
+header .site-header .search-box.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+}
+
+header .site-header .search-box.not-active {
+  transition: visibility 0.2s, opacity 0.2s linear;
+  -webkit-transition: visibility 0.2s, opacity 0.2s linear;
+  -moz-transition: visibility 0.2s, opacity 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .site-header .search-box .search-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .site-header .search-box .search-wrapper input {
+  width: 100%;
+  margin-right: 15px;
+  background-color: transparent;
+  border: 0px;
+  font-size: 250%;
+  color: #FFFFFF;
+  outline: 0;
+  font-family: 'Heebo-Light';
+}
+
+header .site-header .search-box .search-wrapper input:-moz-placeholder,
+header .site-header .search-box .search-wrapper input:-ms-input-placeholder,
+header .site-header .search-box .search-wrapper input::-moz-placeholder,
+header .site-header .search-box .search-wrapper input::-webkit-input-placeholder,
+header .site-header .search-box .search-wrapper input::placeholder { /* Chrome/Opera/Safari */
+  opacity: 0.4;
+  color: #FFFFFF;
+}
+
+header .site-header .search-box .search-wrapper a.search-btn {
+  background-color: #0E723C;
+  padding: 13px 50px;
+  border-radius: 4px;
+  font-family: 'Heebo-Bold';
+  color: #fff;
+}
+
+header .site-header .search-box .search-wrapper .search-icon {
+  width: 35px;
+}
+
+header .site-header .search-box .search-wrapper .close {
+  cursor: pointer;
+  margin: 0 25px;
+  color: #fff;
+  opacity: 1;
+  font-size: 55px;
+  text-shadow: none;
+  font-family: 'Heebo-Light';
+  font-weight: 100;
+  outline: 0;
+}
+
+
 /****** three columns menu ********/
 nav.navbar ul li .dropdown-menu .three-columns-menu {
   display: flex;
@@ -347,6 +424,10 @@ nav.navbar .navbar-collapse ul li {
     width: 60px;
   }
 
+  header .site-header .search-box {
+    display: none;
+  }
+
   header .site-header nav.navbar .navbar-toggler {
     padding: 0;
     border: 0;
@@ -365,18 +446,24 @@ nav.navbar .navbar-collapse ul li {
   nav.navbar .navbar-collapse {
     background-color: rgb(17, 17, 17);
     position: fixed;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
-    right: 0;
+    right: -80vw;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 999;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;  
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+  
+  }
+
+  nav.navbar .navbar-collapse.show {
+    margin-right: 80vw;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
   }
 
   nav.navbar .navbar-collapse .mobile-search {
@@ -393,18 +480,27 @@ nav.navbar .navbar-collapse ul li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     outline: 0;
     color: #fff;
+    padding-right: 25px;
   }
 
-  nav.navbar .navbar-collapse .mobile-search:after {
+  nav.navbar .navbar-collapse .mobile-search:before {
     content: '';
     position: absolute;
     background-image: url(./../assets/images/icons/icon_search.svg);
-    left: 20px;
-    top: 25px;
+    top: 30px;
     background-size: cover;
     width: 13px;
-    height: 15px;
-    opacity: 0.1;
+    height: 13px;
+  }
+
+  nav.navbar .navbar-collapse .mobile-search button.close {
+    position: absolute;
+    left: 20px;
+    color: #fff;
+    opacity: 0.2;
+    font-size: 24px;
+    text-shadow: none;
+    outline: 0;
   }
 
   .dropdown:hover > .dropdown-menu {
@@ -439,7 +535,7 @@ nav.navbar .navbar-collapse ul li {
   }
 
   nav.navbar .navbar-collapse .mobile-social {
-    margin-top: 50px;
+    padding-top: 50px;
     text-align: center;
     height: 100%;;
   }
