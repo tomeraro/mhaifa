@@ -297,16 +297,16 @@
         </div>
       </div>
 
-      <div class="tabs-wrapper">
-          <div class="tabs">
-            <div class="players selected" id="players-tab">סגל שחקנים</div>
-            <div class="management" id="management-tab">צוות מקצועי</div>
-          </div>      
+      <div class="tabs-wrapper secondary">
+        <ul class="nav nav-tabs">
+          <li><a data-toggle="tab" href="#players" class="active">סגל שחקנים</a></li>
+          <li><a data-toggle="tab" href="#management">צוות מקצועי</a></li>
+        </ul>    
       </div>
 
 
-      <div class="all-team-wrapper container common-container">
-        <div id="players">
+      <div class="all-team-wrapper container common-container tab-content">
+        <div id="players" class="tab-pane active">
           <div class="role-wrapper">
               <h2>שוערים</h2>
               <div class="row">
@@ -764,7 +764,7 @@
           </div>
         </div>
       
-        <div id="management" class="hide"> 
+        <div id="management" class="tab-pane"> 
           <div class="role-wrapper">
               <h2>צוות מקצועי</h2>
               <div class="row">
@@ -950,33 +950,6 @@
     <script type="text/javascript" src="./js/jwplayer.js"></script>
     <script>jwplayer.key="XB9qeQvdTZpiqsOHIP9NaB1xN41MlVrgReFFVw==";</script>
     <script type="text/javascript" src="./js/common-script.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#players-tab').click(function() {
-          showElement('#players');
-          setSelectedTab('#players-tab');
-        });
-        $('#management-tab').click(function() {
-          showElement('#management');
-          setSelectedTab('#management-tab');
-        });
-
-        function showElement(elementId) {
-          if (elementId === '#players') {
-            $('#players').removeClass('hide');
-            $('#management').addClass('hide');
-          } else if(elementId === '#management') {
-            $('#players').addClass('hide');
-            $('#management').removeClass('hide');
-          }
-        }
-
-        function setSelectedTab(selectedTab) {
-          $(selectedTab === '#players-tab' ? '#management-tab' : '#players-tab').removeClass('selected');
-          $(selectedTab).addClass('selected');
-        }
-      });  
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/owlcarousel/owl.carousel.min.js"></script>

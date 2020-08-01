@@ -1,0 +1,133 @@
+.history-search-page .page-main-header {
+  background-color: #202020;
+  flex-direction: column;
+}
+
+.history-search-page .page-main-header .label {
+  color: #002310;
+  background-color: #A99861;
+  padding: 3px 20px;
+  font-size: 190%;
+}
+
+
+.history-search-page .search-wrapper {
+  background-image: url('./../assets/images/bg_history.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 61vw;
+}
+
+.history-search-page .search-wrapper .boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10vw;
+}
+
+.history-search-page .search-wrapper .search-box {
+  width: 515px;
+  border-radius: 19px;
+  background-color: #FFFFFF;
+  padding: 30px 65px 65px;
+  margin: 0 15px;
+}
+
+.history-search-page .search-wrapper .search-box .title {
+  font-size: 310%;
+  font-family: 'Heebo-Light';
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item {
+  margin-bottom: 25px;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  width: 100%;
+  padding: 15px;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item select,
+.history-search-page .search-wrapper .search-box form .form-item input {
+  font-size: 125%;
+  color: #333333;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  background-color: transparent;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item select {
+  -webkit-appearance: inner-spin-button;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item select option {
+  font-size: 125%;
+  color: #333333;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item input::placeholder {
+  color: #333333 !important;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item input::-ms-input-placeholder {
+  color: #333333 !important;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item input:-ms-input-placeholder {
+  color: #333333 !important;
+}
+
+.history-search-page .search-wrapper .search-box form .form-item input::-moz-placeholder {
+  color: #333333 !important;
+  opacity: 1;
+}
+
+.history-search-page .search-wrapper .search-box form button {
+  width: 100%;
+  background-color: #0E723C;
+  border-radius: 4px;
+  color: #fff;
+  padding: 13px 0;
+  font-family: 'Heebo-Bold';
+}
+
+@media screen and (max-width: 991px) {
+  .history-search-page .page-main-header {
+    height: 100px;
+  }
+
+  .history-search-page .page-main-header .label {
+    font-size: 95%;
+  }
+
+  .history-search-page .page-main-header h1 {
+    font-size: 250%;
+  }
+
+  .history-search-page .search-wrapper {
+    height: 100%;
+  }
+
+  .history-search-page .search-wrapper .boxes {
+    flex-direction: column;
+    padding: 30px 15px 70px 15px;
+    align-items: center;
+  }
+
+  .history-search-page .search-wrapper .boxes .search-box {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 4% 7% 7%7%;
+  }
+
+  .history-search-page .search-wrapper .search-box .title {
+    font-size: 280%;
+  }
+}

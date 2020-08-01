@@ -16,37 +16,6 @@
   font-family: 'Heebo-Bold';
 }
 
-.team-page .tabs-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.team-page .tabs {
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-}
-
-.team-page .tabs .players,
-.team-page .tabs .management {
-  height: 50px;
-  background: #fff;
-  border: 1px solid rgba(91,84,106,0.2);
-  color: #5B546A;
-  width: 140px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.team-page .tabs .players.selected,
-.team-page .tabs .management.selected {
-  color: #0E723C;
-  border: 1px solid #0E723C;
-  font-family: 'Heebo-Bold';
-}
-
 .team-page .all-team-wrapper .role-wrapper {
   margin-bottom: 30px;
 }
@@ -127,12 +96,6 @@
   padding: 13px 15px;
 }
 
-.team-page .all-team-wrapper #players.hide,
-.team-page .all-team-wrapper #management.hide {
-  display: none;
-}
-
-
 
 
 @media screen and (max-width: 991px) {
@@ -188,6 +151,10 @@
 
   .team-page .all-team-wrapper .role-wrapper .item .number {
     top: 15%;
+  }
+
+  .team-page .tabs-wrapper.secondary {
+    padding-top: 30px;
   }
 }
 

@@ -119,13 +119,6 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 991px) {
-  .full-width-mobile-85 {
-    max-width: 85%;
-    margin: 0 auto;
-  }
-}
-
 .common-container {
   max-width: 74vw;
   margin: 0 auto; 
@@ -289,8 +282,10 @@ h1, h2, h3 {
   opacity: unset;
   width: 80px;
   height: 80px;
+  top: calc(50% + 40px);
 }
 
+div[id*='video-player-'] .jw-display-icon-container,
 #menu-player .jw-display-icon-container {
   background-image: url('./../assets/images/icons/icon_play-small.svg') !important;
   background-size: cover;
@@ -299,6 +294,7 @@ h1, h2, h3 {
   opacity: unset;
   width: 40px;
   height: 40px;
+  top: calc(50% + 20px);
 }
 
 
@@ -323,4 +319,36 @@ h1, h2, h3 {
   .archive-page .page-main-header h1 {
     font-size: 180%;
   }
+}
+
+
+/**** TABS ****/
+.tabs-wrapper.secondary {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-wrapper.secondary ul.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.tabs-wrapper.secondary ul.nav-tabs li a {
+  height: 50px;
+  background: #fff;
+  border: 1px solid rgba(91,84,106,0.2);
+  color: #5B546A;
+  width: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-wrapper.secondary ul.nav-tabs li a.active {
+  color: #0E723C;
+  border: 1px solid #0E723C;
+  font-family: 'Heebo-Bold';
 }
