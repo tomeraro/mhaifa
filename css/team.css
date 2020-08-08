@@ -96,7 +96,9 @@
   padding: 13px 15px;
 }
 
-
+.team-page .tabs-wrapper.secondary {
+  padding-top: 30px;
+}
 
 @media screen and (max-width: 991px) {
   .team-page .page-main-header {
@@ -151,10 +153,6 @@
 
   .team-page .all-team-wrapper .role-wrapper .item .number {
     top: 15%;
-  }
-
-  .team-page .tabs-wrapper.secondary {
-    padding-top: 30px;
   }
 }
 

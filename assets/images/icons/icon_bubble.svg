@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_bubble</title>
+    <g id="איזור-משחק" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="haifa_gameArea_live_mobile" transform="translate(-372.000000, -539.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Menu" transform="translate(0.000000, 525.000000)">
+                <g id="Group-2" transform="translate(12.000000, 13.000000)">
+                    <g id="icon/arrow-copy-4" transform="translate(360.000000, 0.000000)">
+                        <path d="M4.3679074,27.9459906 L2.24224021,27.9459906 L3.74530421,26.4429266 C4.55573904,25.6324917 5.06182791,24.5784041 5.19788846,23.4349202 C1.72728802,21.1573442 0,17.8578467 0,14.3988096 C0,8.01728834 5.86521906,1.53216617 15.0508319,1.53216617 C24.7819783,1.53216617 30,7.49969477 30,13.839717 C30,20.2215318 24.7268615,26.1850689 15.0508319,26.1850689 C13.3558275,26.1850689 11.5870991,25.9587905 10.0079633,25.5436239 C8.51311691,27.0768584 6.48770485,27.9459906 4.3679074,27.9459906 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,390 @@
+.green-plug-main-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTIONS BG */
+.green-plug-main-page section {
+  position: relative;
+  width: 100%;
+  background-position: center center;
+}
+
+.green-plug-main-page section.main-1 {
+  background-image: url('./../assets/images/bg_greenPlus_01.jpg');
+  background-size: cover;
+  height: 58vw;
+}
+
+.green-plug-main-page section.main-2 {
+  background-image: url('./../assets/images/bg_greenPlus_02.jpg');
+  background-size: cover;
+  min-height: 58vw;
+  padding: 6vw 0 4.5% 0;
+}
+
+.green-plug-main-page section.main-3 {
+  background-image: url('./../assets/images/bg_greenPlus_03.jpg');
+  background-size: cover;
+  padding: 12.5% 0 4.5% 0;
+}
+
+.green-plug-main-page section.main-4 {
+  background-image: url('./../assets/images/bg_greenPlus_04.jpg');
+  background-size: cover;
+  padding: 18% 0 4.5% 0;
+}
+
+.green-plug-main-page section.main-5 {
+  background-image: url('./../assets/images/bg_greenPlus_05.jpg');
+  background-size: cover;
+  padding: 12% 0 4.5% 0;
+}
+
+.green-plug-main-page section.main-6 {
+  background-image: url('./../assets/images/bg_greenPlus_06.jpg');
+  background-size: cover;
+  height: 58vw;
+  overflow: hidden;
+}
+
+.green-plug-main-page section .action-btn {
+  margin-top: 15px;
+}
+
+.green-plug-main-page section.main-1 .action-btn {
+  margin-top: 45px;
+} 
+
+.green-plug-main-page section .action-btn a {
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  padding: 17px 35px;
+  font-size: 110%;
+  letter-spacing: 1.3px;
+  color: #C5B268;
+  font-family: 'Heebo-Bold';
+  display: inline-block;
+}
+
+
+/*** SECTION 1 ***/
+.green-plug-main-page section .main-content-wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 4.5%;
+  text-align: center;
+}
+
+.green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus {
+  color: #FFFFFF;
+  font-family: 'Heebo-Bold';
+  text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .main {
+  font-size: 1100%;
+  direction: ltr;
+  line-height: 0.8;
+}
+
+.green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .secondary {
+  font-size: 225%;
+}
+
+/*** OTHER SECTIONS ***/
+.green-plug-main-page section .content-wrapper {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.green-plug-main-page section .content-wrapper .title {
+  color: #CEBD7C;
+  font-family: 'Heebo-Bold';
+  font-size: 460%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 90%;
+}
+
+.green-plug-main-page section .content-wrapper .second-title  {
+  color: #ffffff;
+  font-family: 'Heebo-Bold';
+  font-size: 280%;
+  text-align: center;
+  background-color: rgba(14, 114, 60, 0.7);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 90%;
+}
+
+.green-plug-main-page section.main-2 .content-wrapper .gift {
+  margin: -40px 0 40px 0;
+}
+
+.green-plug-main-page section.main-2 .content-wrapper .gift img {
+  max-width: 35vw;
+  min-width: 500px;
+}
+
+.green-plug-main-page section.main-2 .content-wrapper .benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.green-plug-main-page section.main-2 .content-wrapper .benefits .item {
+  margin: 0 15px 40px 15px;
+}
+
+
+.green-plug-main-page section .content-wrapper .description {
+  font-family: 'Heebo-Medium';
+  color: #ffffff;
+  font-size: 220%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.green-plug-main-page section .content-wrapper .description .bottom-arrow {
+  margin: 20px 0 80px 0;
+}
+
+.green-plug-main-page section.main-6 .content-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+  padding: 16% 0 4.5% 0;
+}
+
+.green-plug-main-page section.main-6 .content-wrapper .players {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.green-plug-main-page section.main-6 .content-wrapper .players .player-left {
+  position: absolute;
+  bottom: 0;
+  left: calc(-30vw);
+}
+
+.green-plug-main-page section.main-6 .content-wrapper .players .player-left img {
+  max-width: 36vw;
+}
+
+.green-plug-main-page section.main-6 .content-wrapper .players .player-right {
+  position: absolute;
+  bottom: 0;
+  right: calc(-25vw);
+}
+
+.green-plug-main-page section.main-6 .content-wrapper .players .player-right img {
+  max-width: 25vw;
+}
+
+.green-plug-main-page section.main-6 .action-btn {
+  position: absolute;
+  bottom: 8%;
+}
+
+@media screen and (max-width: 991px) {
+  .green-plug-main-page section .action-btn a {
+    font-size: 110%;
+  }
+
+  .green-plug-main-page section.main-1 {
+    height: 157vw;
+    max-height: 900px;
+    background-position: center center;
+  }
+
+  .green-plug-main-page section .content-wrapper {
+    position: relative;
+  }
+
+  .green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .main {
+    font-size: 550%;
+  }
+
+  .green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .secondary {
+    font-size: 115%;
+  }
+
+  .green-plug-main-page section .content-wrapper .title {
+    max-width: initial;
+    line-height: 1;
+    font-size: 220%;
+    padding: 10px 20px;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .title,
+  .green-plug-main-page section.main-5 .content-wrapper .title {
+    max-width: 75%;
+  }
+
+
+  .green-plug-main-page section .content-wrapper .second-title {
+    font-size: 155%;
+    max-width: 83%;
+  }
+
+  .green-plug-main-page section .content-wrapper .description {
+    font-size: 130%;
+  }
+
+  .green-plug-main-page section.main-5 .content-wrapper .description .item {
+    margin-bottom: 20px;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .gift {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .gift img {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits {
+    margin: 0 auto;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item {
+    width: 50vw;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item:nth-child(2) {
+    order: 3;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item:nth-child(3) {
+    order: 2;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item:nth-child(4) {
+    order: 5;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item:nth-child(5) {
+    order: 4;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item img {
+    height: 26vw;
+    max-height: 180px;
+  }
+
+  .green-plug-main-page section.main-2,
+  .green-plug-main-page section.main-3,
+  .green-plug-main-page section.main-4,
+  .green-plug-main-page section.main-5 {
+    padding-bottom: 12%;
+  }
+  
+  .green-plug-main-page section.main-6 {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .green-plug-main-page section.main-2,
+  .green-plug-main-page section.main-3,
+  .green-plug-main-page section.main-5 {
+    padding-top: 30px;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .green-plug-main-page section.main-6 .action-btn {
+    position: relative;
+    margin-top: 35px;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper .players {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper .players .player-right {
+    position: relative;
+    right: auto;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper .players .player-left {
+    position: relative;
+    left: auto;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper .players .player-right img {
+    max-width: 30vw;
+  }
+
+  .green-plug-main-page section.main-6 .content-wrapper .players .player-left img {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .green-plug-main-page section .action-btn {
+    font-size: initial;
+  }
+
+  .green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .main {
+    font-size: 700% !important;
+  }
+
+  .green-plug-main-page section.main-1 .main-content-wrapper .title-green-plus .secondary {
+    font-size: 150%;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item {
+    width: 33%;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .gift {
+    margin-top: -40px;
+  }
+
+  .green-plug-main-page section.main-2 .content-wrapper .benefits .item img {
+    max-height: 150px;
+  }
+
+  .green-plug-main-page section .content-wrapper .title {
+    font-size: 250%;
+  }
+
+  .green-plug-main-page section .content-wrapper .second-title {
+    font-size: 175%;
+  }
+
+  .green-plug-main-page section .content-wrapper .description {
+    font-size: 150%;
+  }
+}

@@ -182,6 +182,7 @@ h2.lineup-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 100%;
 }
 
 .game-area-page .lineups-wrapper .player {
@@ -201,6 +202,10 @@ h2.lineup-title {
 }
 
 @media screen and (max-width: 991px) {
+  .game-area-page {
+    padding-bottom: 60px;
+  }
+
   .game-area-page .game-area-header {
     background-color: #002310;
     background-image: none;
@@ -256,6 +261,28 @@ h2.lineup-title {
   
   .game-area-page .game-area-links ul li a img.mobile {
     display: block;
+    opacity: 0.5;
+  }
+
+  .game-area-page .game-area-links ul li.selected a img.mobile {
+    opacity: 1;
+  }
+
+  .game-area-page .lineups-wrapper {
+    background-image: url('./../assets/images/bg_court_mobile.png');
+    background-size: cover;
+    max-width: 95%;
+    height: 120vw;
+    padding: 20px 0;
+  }
+
+  .game-area-page .lineups-wrapper .player .name {
+    font-size: 65%;
+    padding: 0 5px;
+  }
+
+  .game-area-page .lineups-wrapper .player img {
+    width: 50px;
   }
 }
 
@@ -270,5 +297,18 @@ h2.lineup-title {
 
   .game-area-page .game-area-links ul {
     padding: 17px 30px;
+  }
+
+  .game-area-page .lineups-wrapper {
+    max-width: 90%;
+  }
+  
+  .game-area-page .lineups-wrapper .player .name {
+    font-size: initial;
+    padding: 0 5px;
+  }
+
+  .game-area-page .lineups-wrapper .player img {
+    width: 65px;
   }
 }

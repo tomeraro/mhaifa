@@ -1,0 +1,307 @@
+.green-plus-dashboard-page {
+  background-image: url('./../assets/images/bg_greenPlus_02.jpg');
+  background-size: cover;
+  padding: 3% 0;
+}
+
+.green-plus-dashboard-page .container {
+  max-width: 1242px;
+}
+
+.green-plus-dashboard-page .inner-col {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  border-radius: 2px;
+  padding: 0;
+  height: 1100px;
+}
+
+.green-plus-dashboard-page .inner-col.gallery {
+  padding: 15px 25px;
+  overflow-y: scroll;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .title {
+  padding: 15px 25px 0 25px;
+}
+
+.green-plus-dashboard-page .inner-col .title {
+  text-align: center;
+  font-size: 210%;
+  font-family: 'Heebo-Bold';
+  color: #0E723C;
+  margin-bottom: 10px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .personal-wrapper {
+  display: flex;
+  padding: 0 25px;
+  justify-content: space-between;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .personal-wrapper .profile-pic img {
+  max-width: 100%;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .personal-wrapper table tr td:first-child {
+  font-family: 'Heebo-Bold';
+  min-width: 80px;
+  width: 80px;
+  display: block;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .personal-wrapper table {
+  border-collapse: separate;
+  border-spacing: 0 2px;
+  word-break: break-word;
+}
+
+
+.green-plus-dashboard-page .inner-col.my-profile a.update-details {
+  color: #0E723C;
+  padding-right: 25px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .membership {
+  background-color: rgb(216, 216, 216, 0.2);
+  margin: 15px 0 0 0;
+  position: relative;
+  padding: 28px 18px;
+  border-top: 1px solid rgb(151, 151, 151, 0.2);
+  border-bottom: 1px solid rgb(151, 151, 151, 0.2);
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .membership .membership-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .membership .membership-content a {
+  background-color: #0E723C;
+  border-radius: 4px;
+  padding: 13px 25px;
+  color: #ffffff;
+  letter-spacing: 1.14px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .membership .membership-content .end-membership .label {
+  font-size: 110%;
+  font-family: 'Heebo-Bold';
+  color: #0E723C;
+  padding: 0;
+}
+
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper {
+  padding: 15px 25px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper .history-title {
+  font-size: 110%;
+  font-family: 'Heebo-Bold';
+  color: #0E723C;
+  margin-bottom: 10px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper table tr {
+  margin-bottom: 10px;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper table tr th {
+  font-family: 'Heebo-Bold';
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper table tr th:first-child,
+.green-plus-dashboard-page .inner-col.my-profile .history .content-wrapper table tr td:first-child {
+  width: 38%;
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history.tickets {
+  background-color: rgb(216, 216, 216, 0.2);
+  border-top: 1px solid rgb(151, 151, 151, 0.2);
+  border-bottom: 1px solid rgb(151, 151, 151, 0.2);
+}
+
+.green-plus-dashboard-page .inner-col.my-profile .history.points .content-wrapper .total {
+  font-family: 'Heebo-Medium';
+  margin: 10px 0;
+}
+
+/*center col*/
+.green-plus-dashboard-page .inner-col.center {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border: 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.green-plus-dashboard-page .inner-col.center .item {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  border-radius: 2px;
+  padding: 15px 25px;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.benefits .sub-title {
+  font-size: 110%;
+  font-family: 'Heebo-Bold';
+  color: #0E723C;
+  margin-bottom: 10px; 
+}
+
+.green-plus-dashboard-page .inner-col.center .item.benefits .benefits-content .benefit-wrapper {
+  margin-bottom: 22px;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.benefits .benefits-content .benefit-wrapper img {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.benefits .benefits-content .benefit-wrapper .benefit-label {
+  font-family: 'Heebo-Bold';
+  margin-top: 5px;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .activity-wrapper .activity-title {
+  font-size: 135%;
+  font-family: 'Heebo-Bold';
+  line-height: 1.2;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities img.activity-img {
+  max-width: 100%;
+}
+
+
+.green-plus-dashboard-page .inner-col.center .item.activities .activity-wrapper .sign a {
+  color: #0E723C;
+  font-size: 95%;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .row-activity {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .row-activity:last-child {
+  margin-bottom: 0;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .row-activity .activity-img {
+  padding-bottom: 135px;
+  position: relative;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .row-activity .activity-img .img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.green-plus-dashboard-page .inner-col.center .item.activities .row-activity .activity-img .img-container img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* left col */
+.green-plus-dashboard-page .inner-col.gallery .gallery-item {
+  margin-bottom: 20px;
+}
+
+.green-plus-dashboard-page .inner-col.gallery .gallery-item .gallery-img {
+  padding-bottom: 70%;
+  position: relative; 
+}
+
+.green-plus-dashboard-page .inner-col.gallery .gallery-item .gallery-img .img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.green-plus-dashboard-page .inner-col.gallery .gallery-item .gallery-img .img-container img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.green-plus-dashboard-page .inner-col.gallery .gallery-item .gallery-item-label {
+  font-family: 'Heebo-Bold';
+  font-size: 110%;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .green-plus-dashboard-page .inner-col {
+    height: auto;
+    max-width: 500px;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery,
+  .green-plus-dashboard-page .inner-col.my-profile {
+    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+  }
+
+  .green-plus-dashboard-page .inner-col.center {
+    margin: 0 auto 30px auto;
+  }
+
+  .green-plus-dashboard-page .inner-col.center .item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .col-gallery {
+    padding: 0;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .col-gallery:nth-child(2n+1) {
+    padding-left: 3px;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .col-gallery:nth-child(2n) {
+    padding-right: 3px;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .gallery-item {
+    margin-bottom: 15px;
+  }
+
+  .green-plus-dashboard-page .inner-col.gallery .gallery-item .gallery-img {
+    padding-bottom: 68%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}

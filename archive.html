@@ -23,7 +23,7 @@
             <li><a href="#">מנויי VIP</a></li>
             <li><a href="#">התחברות/הרשמה</a></li>
           </ul>
-
+  
           <div class="actions">
               <a href="#"><img src="./assets/images/icons/icon_instagram.svg"></a>
               <a href="#"><img src="./assets/images/icons/icon_youtube.svg"></a>
@@ -31,9 +31,9 @@
               <a class="search" href="#" id="search-icon"><img src="./assets/images/icons/icon_search.svg"></a>  
           </div>
         </div>
-
+  
         <div class="site-header">
-
+  
           <div class="top-header">
             <div class="main">
               <img src="assets/images/logo.png">
@@ -42,11 +42,11 @@
                 <h2>האתר הרשמי</h2>
               </div>
             </div>
-
+  
             <div class="sponser-img">
               <img src="assets/images/header-sponser.png">
             </div>
-
+  
             <div class="search-box not-active" id="search-box">
               <div class="search-wrapper">
                   <img class="search-icon" src="./assets/images/icons/icon_search.svg">
@@ -59,11 +59,11 @@
             </div>
       
           </div>
-
+  
           <div class="login">
             <a href="login.html"><img src="./assets/images/icons/icon_login.svg"></a>
           </div>
-
+  
           <nav class="navbar navbar-expand-lg">
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigationMenu">
                 <img src="assets/images/icons/icon_menu.svg">
@@ -87,7 +87,8 @@
                   </li>
       
                   <li class="dropdown">
-                    <a href="#" class="menu-link" data-toggle="dropdown">חדשות</a>
+                    <a href="archive.html" class="menu-link d-block d-lg-none">חדשות</a>
+                    <a href="#" class="menu-link d-none d-lg-block" data-toggle="dropdown">חדשות</a>
                     
                     <div class="dropdown-menu">
                       <div class="three-columns-menu container">
@@ -125,7 +126,8 @@
                   </li>
                   
                   <li class="dropdown">
-                    <a href="#" class="menu-link" data-toggle="dropdown">הקבוצה</a>
+                    <a href="article.html" class="menu-link d-block d-lg-none">הקבוצה</a>
+                    <a href="#" class="menu-link d-none d-lg-block" data-toggle="dropdown">הקבוצה</a>
                     
                     <div class="dropdown-menu">
                       <div class="five-columns-menu">
@@ -153,7 +155,7 @@
                             <span>גיל אופק</span>
                           </div>
                         </div>
-
+  
                         <div class="column">
                           <div class="title">הגנה</div>
                           <div class="item">
@@ -193,7 +195,7 @@
                             <span>גיל אופק</span>
                           </div>
                         </div>
-
+  
                         <div class="column">
                           <div class="title">קישור</div>
                           <div class="item">
@@ -237,7 +239,7 @@
                             <span>גיל אופק</span>
                           </div>
                         </div>
-
+  
                         <div class="column">
                           <div class="title">התקפה</div>
                           <div class="item">
@@ -277,7 +279,7 @@
                     <a href="#" class="menu-link">ירוק בקהילה</a>
                   </li>
                 </ul>
-
+  
                 <div class="mobile-social d-lg-none">
                     <a href="#"><img src="./assets/images/icons/icon_instagram.svg"></a>
                     <a href="#"><img src="./assets/images/icons/icon_youtube.svg"></a>
@@ -285,7 +287,7 @@
                 </div>
               </div>
           </nav>
-
+  
         </div>
     </header>
 
@@ -293,7 +295,6 @@
       <div class="page-main-header">
         <h1>ארכיון חדשות</h1>
       </div>
-
 
       <div class="archive-boxes-wrapper">
 
@@ -626,7 +627,7 @@
                 </div>
               </div>
           </div>
-        </div>
+      </div>
     </div>
 
     <footer>
@@ -663,22 +664,10 @@
       </div>
     </footer>
 
-
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/jwplayer.js"></script>
     <script>jwplayer.key="XB9qeQvdTZpiqsOHIP9NaB1xN41MlVrgReFFVw==";</script>
     <script type="text/javascript" src="./js/common-script.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        jwplayer('haifa-tv-player').setup({
-          'image': './assets/images/img_video.jpg',
-          'stretching': 'fill',
-          'file': 'http://www.youtube.com/v/nLky7bv3cQs',
-          'width': '100%',
-          'aspectratio': '16:9',
-        });
-      });  
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/owlcarousel/owl.carousel.min.js"></script>
