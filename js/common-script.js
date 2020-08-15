@@ -110,4 +110,27 @@ $(document).ready(function(){
     nav: true,
     margin: 30,
   });
+
+    // **** VIP QA ****//
+    $('.owl-carousel.qa-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      nav: false,
+      dots: false,
+      margin: 50,
+      responsive:{
+        0:{
+          items: 1,
+        },
+        576: {
+          items: 2,
+        },
+        768:{
+          items: 2,
+        },
+        1440:{
+          items: 5,
+        }
+    }
+    });
 });  

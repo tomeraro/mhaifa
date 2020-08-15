@@ -1,0 +1,197 @@
+.stadium-page .page-main-header {
+  background-image: url('./../assets/images/bg_stadium.jpg');
+  flex-direction: column;
+}
+
+.stadium-page .page-main-header .label {
+  color: #002310;
+  background-color: #A99861;
+  padding: 3px 20px;
+  font-size: 190%;
+}
+
+.stadium-page .stadium-wrapper {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 75px;
+}
+
+.stadium-page .stadium-wrapper .stadium-links {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stadium-page .stadium-wrapper .stadium-links .stadium-item {
+  margin: 0 10px;
+  font-size: 90%;
+  text-align: center;
+}
+
+.stadium-page .stadium-wrapper .stadium-links .stadium-item .icon {
+  margin-bottom: 5px;
+}
+
+.stadium-page .stadium-wrapper .stadium-container {
+  max-width: 1195px;
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row {
+  padding: 100px 0 40px 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row .col-content,
+.stadium-page .stadium-wrapper .stadium-container .stadium-row .col-img {
+  padding: 0;
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row .col-content h2.title {
+  font-size: 310%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row .col-content .content {
+  font-size: 120%;
+  color: #000000;
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row .col-img img {
+  max-width: 90%;
+}
+
+.stadium-page .stadium-wrapper .stadium-container .stadium-row:nth-child(2n+1) .col-img {
+  text-align: left;
+}
+
+.stadium-page .projects-wrapper {
+  padding: 45px 0;
+  text-align: center;
+}
+
+.stadium-page .projects-wrapper .title {
+  position: relative;
+}
+
+.stadium-page .projects-wrapper .title:after {
+  background-image: url('./../assets/images/title_stadium.png');
+  width: 264px;
+  height: 26px;
+  background-repeat: no-repeat;
+  position: absolute;
+  content: '';
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.stadium-page .projects-wrapper .title h3 {
+  font-size: 200%;
+}
+
+.stadium-page .projects-wrapper .future-projects {
+  background-image: url('./../assets/images/bg1.png');
+  background-position-x: center;
+  background-position-y: -30px;
+}
+
+.stadium-page .projects-wrapper .future-projects-items {
+  display: flex;
+  max-width: 750px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.stadium-page .projects-wrapper .future-projects .future-projects-items .project-item .label {
+  margin-top: 35px;
+  font-size: 200%;
+}
+
+@media screen and (max-width: 991px) {
+  .stadium-page .page-main-header {
+    height: 100px;
+    background-position: 50%;
+  }
+
+  .stadium-page .page-main-header .label {
+    font-size: 95%;
+  }
+  .stadium-page .page-main-header h1 {
+    font-size: 250%;
+  }
+
+  .stadium-page .stadium-wrapper {
+    padding: 0 15px; 
+    padding-bottom: 0;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container {
+    max-width: auto;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row {
+    padding-top: 30px;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row .col-img img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row .col-content {
+    margin-bottom: 30px;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row .col-content {
+    order: 1;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row .col-img {
+    order: 2;
+  }
+
+  .stadium-page .projects-wrapper {
+    display: none;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-links {
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-links .stadium-item {
+    width: 20%;
+    margin: 0 2px;
+    font-size: 85%;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-links .stadium-item:first-child {
+    margin-right: 0;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-links .stadium-item:last-child {
+    margin-left: 0;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-links .stadium-item .icon a img {
+    max-width: 100%;
+  }
+
+  .stadium-page .stadium-wrapper .stadium-container .stadium-row:last-child {
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .stadium-page .stadium-wrapper .stadium-container {
+    max-width: 95%;
+  }
+}
+
